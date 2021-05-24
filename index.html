@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <!-- Title & Favicon -->
+    <title>Contact Consent</title>
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <!-- ============================= Start Header Section Here ============================= -->
+    <header id="header-section">
+      <nav class="navbar navbar-expand-lg py-4 fixed-top">
+        <div class="container">
+          <a class="navbar-brand d-sm-none" href="index.html"
+            ><img src="img/mobile-logo.png" alt="logo" class="img-fluid"
+          /></a>
+          <a class="navbar-brand d-none d-sm-block" href="index.html"
+            ><img src="img/logo.png" alt="logo" class="img-fluid"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="bar-1 d-block"></span>
+            <span class="bar-2 d-block"></span>
+            <span class="bar-3 d-block"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse align-items-center"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav ms-auto align-items-center">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="javascript:void(0)"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0)">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0)">Products</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  href="javascript:void(0)"
+                  class="nav-link button button-gradient"
+                  >Login</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="javascript:void(0)"
+                  class="nav-link button button-gradient"
+                  data-bs-toggle="modal"
+                  data-bs-target="#contact-modal"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- ============================= End Header Section Here ============================= -->
+
+    <!-- Start PopUp Contact -->
+    <div id="pop-up-contact">
+      <div class="container">
+        <div
+          class="modal fade"
+          id="contact-modal"
+          tabindex="-1"
+          aria-labelledby="contact-modal-label"
+          aria-hidden="true"
+          data-bs-backdrop="static"
+          data-bs-keyboard="false"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <!-- Modal Close Button -->
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+              <!-- Modal Body -->
+              <div class="modal-body">
+                <form action="javascript:void(0)">
+                  <!-- Send Message -->
+                  <div class="send-message">
+                    <div class="row g-4">
+                      <div class="col-12">
+                        <p
+                          class="para-text big-para-text text-center mb-0 poligon-bold"
+                        >
+                          Contact Us
+                        </p>
+                      </div>
+                      <div class="col-md-6">
+                        <input
+                          name="name"
+                          class="d-block w-100"
+                          type="text"
+                          placeholder="Name"
+                          required
+                        />
+                      </div>
+                      <div class="col-md-6">
+                        <input
+                          name="company"
+                          class="d-block w-100"
+                          type="text"
+                          placeholder="Company"
+                          required
+                        />
+                      </div>
+                      <div class="col-md-6">
+                        <input
+                          name="email"
+                          class="d-block w-100"
+                          type="email"
+                          placeholder="Email"
+                          required
+                        />
+                      </div>
+                      <div class="col-md-6">
+                        <input
+                          name="phone"
+                          class="d-block w-100"
+                          type="text"
+                          placeholder="Phone"
+                          required
+                        />
+                      </div>
+                      <div class="col-12">
+                        <textarea
+                          name="message"
+                          class="d-block w-100"
+                          placeholder="Message"
+                          required
+                        ></textarea>
+                      </div>
+                      <!-- Submit Button -->
+                      <div class="col-12 text-center">
+                        <button class="button button-gradient border-0">
+                          Submit
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End PopUp Contact -->
+
+    <!-- ============================= Start Banner Section Here ============================= -->
+    <div class="navbar-space"></div>
+    <section id="banner-section">
+      <div class="container">
+        <div class="row g-5 align-items-center">
+          <!-- Left Side -->
+          <div class="col-lg-6">
+            <div class="left-side">
+              <h1 class="big-heading m-0">
+                Take a step in the right direction.
+              </h1>
+              <p class="para-text my-4">
+                Contact us today to set up a demo to discuss your company’s
+                compliance needs. We can find the right solution for you and
+                discuss affordable pricing according to your needs.
+              </p>
+              <div class="button-box pt-3">
+                <a
+                  href="javascript:void(0)"
+                  class="button button-gradient"
+                  data-bs-toggle="modal"
+                  data-bs-target="#contact-modal"
+                  >Contact Us</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Right Side -->
+          <div class="col-lg-6">
+            <div class="right-side text-center text-lg-end">
+              <img src="img/banner-img.png" alt="image" class="img-fluid" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ============================= End Banner Section Here ============================= -->
+
+    <!-- ============================= Start Pricing Section Here ============================= -->
+    <section id="pricing-section">
+      <div class="container">
+        <div class="row g-5">
+          <!-- Left Side -->
+          <div class="col-xl-6">
+            <div class="left-side">
+              <h2 class="heading mb-0">
+                Affordable Solutions for today's TCPA and DNC Compliance Needs.
+              </h2>
+              <p class="para-text my-4">
+                ContactConsent has the most innovative compliance tools in the
+                Telemarketing space today. Best of all they are very cost
+                effective and keep you operating with peace of mind. Pricing of
+                our solutions can be bundled or ordered separately depending on
+                your company’s individual needs. <br />
+                Set up your appointment today so we can discuss the right
+                solutions for your companies needs.
+              </p>
+              <div class="button-box pt-3">
+                <a href="javascript:void(0)" class="button button-gradient"
+                  >Schedule an appointment</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Right Side -->
+          <div class="col-xl-6">
+            <div class="right-side">
+              <div class="row g-5">
+                <!-- Pricing Card -->
+                <div class="col-md-6">
+                  <div class="card border-0 pricing-card">
+                    <!-- Card Heading & Price -->
+                    <div class="card-heading-and-price">
+                      <div class="card-body">
+                        <h4 class="card-heading d-flex justify-content-between">
+                          <span>Startup</span>
+                          <span>$29</span>
+                        </h4>
+                        <p class="para-text mt-4">
+                          Best option for small businesses, start ups and
+                          personal projects
+                        </p>
+                      </div>
+                    </div>
+                    <!-- Card Features -->
+                    <div class="card-features">
+                      <div class="card-body">
+                        <div class="media d-flex align-items-center mt-3">
+                          <div class="me-2">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="currentColor"
+                              class="bi bi-check"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"
+                              />
+                            </svg>
+                          </div>
+                          <div class="media-body">
+                            <p class="text-size mb-0">Auto update mode</p>
+                          </div>
+                        </div>
+                        <div class="media d-flex align-items-center mt-3">
+                          <div class="me-2">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="currentColor"
+                              class="bi bi-check"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"
+                              />
+                            </svg>
+                          </div>
+                          <div class="media-body">
+                            <p class="text-size mb-0">Online operator 24/7</p>
+                          </div>
+                        </div>
+                        <div class="media d-flex align-items-center mt-3">
+                          <div class="me-2">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="currentColor"
+                              class="bi bi-check"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"
+                              />
+                            </svg>
+                          </div>
+                          <div class="media-body">
+                            <p class="text-size mb-0">International posting</p>
+                          </div>
+                        </div>
+                        <div class="media d-flex align-items-center mt-3">
+                          <div class="me-2">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="currentColor"
+                              class="bi bi-check"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"
+                              />
+                            </svg>
+                          </div>
+                          <div class="media-body">
+                            <p class="text-size mb-0">Unique newsletters</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Card Button -->
+                    <div class="card-button-box">
+                      <div class="card-body">
+                        <a
+                          href="javascript:void(0)"
+                          class="button button-gradient d-block w-100 text-center"
+                          >PURCHASE</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Pricing Card -->
+                <div class="col-md-6">
+                  <div class="card border-0 pricing-card">
+                    <!-- Card Heading & Price -->
+                    <div class="card-heading-and-price">
+                      <div class="card-body">
+                        <h4 class="card-heading d-flex justify-content-between">
+                          <span>Company</span>
+                          <span>$29</span>
+                        </h4>
+                        <p class="para-text mt-4">
+                          Best option for small businesses, start ups and
+                          personal projects
+                        </p>
+                      </div>
+                    </div>
+                    <!-- Card Features -->
+                    <div class="card-features">
+                      <div class="card-body">
+                        <div class="media d-flex align-items-center mt-3">
+                          <div class="me-2">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="currentColor"
+                              class="bi bi-check"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"
+                              />
+                            </svg>
+                          </div>
+                          <div class="media-body">
+                            <p class="text-size mb-0">Auto update mode</p>
+                          </div>
+                        </div>
+                        <div class="media d-flex align-items-center mt-3">
+                          <div class="me-2">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="currentColor"
+                              class="bi bi-check"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"
+                              />
+                            </svg>
+                          </div>
+                          <div class="media-body">
+                            <p class="text-size mb-0">Online operator 24/7</p>
+                          </div>
+                        </div>
+                        <div class="media d-flex align-items-center mt-3">
+                          <div class="me-2">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="currentColor"
+                              class="bi bi-check"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"
+                              />
+                            </svg>
+                          </div>
+                          <div class="media-body">
+                            <p class="text-size mb-0">International posting</p>
+                          </div>
+                        </div>
+                        <div class="media d-flex align-items-center mt-3">
+                          <div class="me-2">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="currentColor"
+                              class="bi bi-check"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"
+                              />
+                            </svg>
+                          </div>
+                          <div class="media-body">
+                            <p class="text-size mb-0">Unique newsletters</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Card Button -->
+                    <div class="card-button-box">
+                      <div class="card-body">
+                        <a
+                          href="javascript:void(0)"
+                          class="button button-gradient d-block w-100 text-center"
+                          >PURCHASE</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ============================= End Pricing Section Here ============================= -->
+
+    <!-- ============================= Start Solution Section Here ============================= -->
+    <section id="solution-section">
+      <div class="container">
+        <!-- Section Title -->
+        <div class="section-title">
+          <div class="row justify-content-center">
+            <div class="col-md-10 col-lg-8 col-xxl-6 text-center">
+              <h2 class="heading">All of our solutions</h2>
+              <p class="para-text mt-4">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium, totam rem aperiam, eaque
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Solution Cards -->
+        <div class="solution-cards mt-5">
+          <div class="row g-4">
+            <!-- Solution Card -->
+            <div class="col-md-6 col-xl-3">
+              <div class="card border-0 solution-card">
+                <div class="card-body">
+                  <img
+                    src="img/consentform-short-logo.svg"
+                    alt="image"
+                    class="img-fluid"
+                  />
+                  <h4 class="card-heading my-4">ConsentForm</h4>
+                  <p class="card-text para-text">
+                    is a tool designed to collect written consent to contact
+                    confirmation from the customer.
+                  </p>
+                  <a
+                    class="para-text d-flex align-items-center"
+                    href="https://ConsentForm.com"
+                    target="_blank"
+                    ><span>ConsentForm.com</span>
+                    <i class="fas fa-angle-right ms-2"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <!-- Solution Card -->
+            <div class="col-md-6 col-xl-3">
+              <div class="card border-0 solution-card">
+                <div class="card-body">
+                  <img
+                    src="img/dncscrubbing-short-logo.svg"
+                    alt="image"
+                    class="img-fluid"
+                  />
+                  <h4 class="card-heading my-4">DNCScrubbing</h4>
+                  <p class="card-text para-text">
+                    our most popular tool, shields outgoing and incoming calls
+                    against the DNC in real time.
+                  </p>
+                  <a
+                    class="para-text d-flex align-items-center"
+                    href="https://DNCScrubbing.com"
+                    target="_blank"
+                    ><span>DNCScrubbing.com</span>
+                    <i class="fas fa-angle-right ms-2"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <!-- Solution Card -->
+            <div class="col-md-6 col-xl-3">
+              <div class="card border-0 solution-card">
+                <div class="card-body">
+                  <img
+                    src="img/dncblocker-short-logo.svg"
+                    alt="image"
+                    class="img-fluid"
+                  />
+                  <h4 class="card-heading my-4">DNCBlocker</h4>
+                  <p class="card-text para-text">
+                    is a fast, accurate, and cost effective scrubbing tool for
+                    excluding the Do Not Call
+                  </p>
+                  <a
+                    class="para-text d-flex align-items-center"
+                    href="https://DNCBlocker.com"
+                    target="_blank"
+                    ><span>DNCBlocker.com</span>
+                    <i class="fas fa-angle-right ms-2"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <!-- Solution Card -->
+            <div class="col-md-6 col-xl-3">
+              <div class="card border-0 solution-card">
+                <div class="card-body">
+                  <img
+                    src="img/consentsms-short-logo.svg"
+                    alt="image"
+                    class="img-fluid"
+                  />
+                  <h4 class="card-heading my-4">ConsentSMS</h4>
+                  <p class="card-text para-text">
+                    Allows your team to send SMS messages manually to customers
+                    and acquire the written consent to
+                  </p>
+                  <a
+                    class="para-text d-flex align-items-center"
+                    href="https://ConsentSMS.com"
+                    target="_blank"
+                    ><span>ConsentSMS.com</span>
+                    <i class="fas fa-angle-right ms-2"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ============================= End Solution Section Here ============================= -->
+
+    <!-- ============================= Start Compliance Section Here ============================= -->
+    <section id="compliance-section">
+      <div class="container">
+        <div class="row g-5 align-items-center">
+          <!-- Left Side -->
+          <div class="col-lg-6 d-none d-lg-block">
+            <div class="left-side text-center text-lg-start">
+              <img src="img/compliance-img.png" alt="image" class="img-fluid" />
+            </div>
+          </div>
+          <!-- Right Side -->
+          <div class="col-lg-6">
+            <div class="right-side">
+              <h2 class="heading">Can you afford not to follow compliance?</h2>
+              <img
+                src="img/compliance-img.png"
+                alt="image"
+                class="img-fluid d-lg-none my-4 my-sm-5"
+              />
+              <p class="para-text my-4">
+                Lawsuits and potential fines for violating the TCPA and DNC are
+                huge, potentially costing you time and money putting your
+                company at risk. Violating the TCPA and the DNC with fines in
+                excess of up to $40,000 per call. <br />
+                <a
+                  class="poligon-bold"
+                  href="http://ContactConsent"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >ContactConsent</a
+                >
+                has designed specialized solutions that are cost-effective tools
+                to help companies grow and be protected from risk. Affordable
+                and easy to use, explore below our solutions that can help your
+                company optimize your compliance and sales performance.
+              </p>
+              <div class="button-box pt-3">
+                <a href="javascript:void(0)" class="button button-gradient"
+                  >Learn more</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ============================= End Compliance Section Here ============================= -->
+
+    <!-- ============================= Start Info Section Here ============================= -->
+    <section id="info-section">
+      <div class="container">
+        <div class="bg">
+          <div class="row g-4">
+            <div class="col-md text-center">
+              <h4 class="info-heading text-white">20</h4>
+              <p class="para-text big-para-text text-white">
+                Years of experience
+              </p>
+            </div>
+            <div class="col-md text-center">
+              <h4 class="info-heading text-white">650M</h4>
+              <p class="para-text big-para-text text-white mb-0">
+                TrustedForm Certificates Claimed
+              </p>
+            </div>
+            <div class="col-lg text-center">
+              <h4 class="info-heading text-white">36B</h4>
+              <p class="para-text big-para-text text-white">Leads Processed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ============================= End Info Section Here ============================= -->
+
+    <!-- ============================= Start Contact Section Here ============================= -->
+    <section id="contact-section">
+      <div class="container">
+        <div class="row g-5 align-items-center">
+          <!-- Left Side -->
+          <div class="col-lg-6 d-none d-lg-block">
+            <div class="left-side text-center text-lg-start">
+              <img src="img/contact-img.png" alt="image" class="img-fluid" />
+            </div>
+          </div>
+          <!-- Right Side -->
+          <div class="col-lg-6">
+            <div class="right-side">
+              <h2 class="heading">Set up an Appointmet</h2>
+              <img
+                src="img/contact-img.png"
+                alt="image"
+                class="img-fluid d-lg-none my-4 my-sm-5"
+              />
+              <form action="javascript:void(0)">
+                <!-- Solution Radio -->
+                <div class="row mt-4">
+                  <div class="col-12">
+                    <p class="para-text poligon-medium">
+                      Which solution you like to discuss
+                    </p>
+                    <div class="solution-radio-box">
+                      <div class="solution-radio d-inline-block">
+                        <div class="d-flex align-items-center">
+                          <input
+                            type="radio"
+                            id="consentform"
+                            name="solution"
+                            required
+                          />
+                          <label for="consentform" class="ms-2"
+                            ><img src="img/consentform-logo.svg" alt="image" />
+                          </label>
+                        </div>
+                      </div>
+                      <div class="solution-radio d-inline-block">
+                        <div class="d-flex align-items-center">
+                          <input
+                            type="radio"
+                            id="dncblocker"
+                            name="solution"
+                            required
+                          />
+                          <label for="dncblocker" class="ms-2"
+                            ><img src="img/dncblocker-logo.svg" alt="image" />
+                          </label>
+                        </div>
+                      </div>
+                      <div class="solution-radio d-inline-block">
+                        <div class="d-flex align-items-center">
+                          <input
+                            type="radio"
+                            id="dncscrubbing"
+                            name="solution"
+                            required
+                          />
+                          <label for="dncscrubbing" class="ms-2"
+                            ><img src="img/dncscrubbing-logo.svg" alt="image" />
+                          </label>
+                        </div>
+                      </div>
+                      <div class="solution-radio d-inline-block">
+                        <div class="d-flex align-items-center">
+                          <input
+                            type="radio"
+                            id="consentsms"
+                            name="solution"
+                            required
+                          />
+                          <label for="consentsms" class="ms-2"
+                            ><img src="img/consentsms-logo.svg" alt="image" />
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Send Message -->
+                <div class="send-message mt-4">
+                  <div class="row g-4">
+                    <div class="col-12">
+                      <p class="para-text mb-0 poligon-medium">
+                        Personal Information
+                      </p>
+                    </div>
+                    <div class="col-md-6">
+                      <input
+                        name="name"
+                        class="d-block w-100"
+                        type="text"
+                        placeholder="Name"
+                        required
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <input
+                        name="company"
+                        class="d-block w-100"
+                        type="text"
+                        placeholder="Company"
+                        required
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <input
+                        name="email"
+                        class="d-block w-100"
+                        type="email"
+                        placeholder="Email"
+                        required
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <input
+                        name="phone"
+                        class="d-block w-100"
+                        type="text"
+                        placeholder="Phone"
+                        required
+                      />
+                    </div>
+                    <div class="col-12">
+                      <textarea
+                        name="message"
+                        class="d-block w-100"
+                        placeholder="Message"
+                        required
+                      ></textarea>
+                    </div>
+                  </div>
+                </div>
+                <!-- Submit Button -->
+                <div class="submit-button-box mt-4">
+                  <button class="button button-gradient border-0">
+                    Submit
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ============================= End Contact Section Here ============================= -->
+
+    <!-- ============================= Start Subscribe Section Here ============================= -->
+    <section id="subscribe-section">
+      <div class="container">
+        <div class="row gy-3 text-center text-lg-start">
+          <div class="col-lg-6 col-xxl-5 align-self-center">
+            <h3 class="subscribe-heading">We will email you</h3>
+            <p style="color: #c8cdd1" class="para-text mt-4">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam
+            </p>
+          </div>
+          <div class="col-xxl-1 d-none d-xxl-block"></div>
+          <div class="col-lg-6 align-self-center">
+            <form action="javascript:void(0)" class="subscribe-form">
+              <div class="row g-4">
+                <div class="col-sm-8">
+                  <input
+                    required
+                    type="email"
+                    placeholder="Email"
+                    class="w-100"
+                  />
+                </div>
+                <div class="col-sm-4">
+                  <button class="button button-gradient border-0 w-100">
+                    Subscribe
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ============================= End Subscribe Section Here ============================= -->
+
+    <!-- ============================= Start Footer Section Here ============================= -->
+    <footer>
+      <div class="container">
+        <!-- Footer Widget -->
+        <div class="footer-widget text-center text-md-start border-top">
+          <div class="row g-5">
+            <div class="col-lg-4">
+              <a href="index.html" class="me-0"
+                ><img
+                  style="width: 18rem"
+                  src="img/footer-logo.png"
+                  alt="logo"
+                  class="img-fluid footer-logo"
+              /></a>
+              <div class="footer-social-icon mt-4 pt-3">
+                <a href="javascript:void(0)"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a href="javascript:void(0)"><i class="fab fa-twitter"></i></a>
+                <a href="javascript:void(0)"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </div>
+            </div>
+            <div class="col-lg-8">
+              <div class="row g-5">
+                <div class="col-md-4">
+                  <h3 class="foter-sub-heading mb-4">IT Services</h3>
+                  <div class="footer-links">
+                    <a href="javascript:void(0)">IT Consulting Services</a>
+                    <a href="javascript:void(0)">Tech Support Services</a>
+                  </div>
+                  <h3 class="foter-sub-heading mt-5 mb-4">Cloud Services</h3>
+                  <div class="footer-links">
+                    <a href="javascript:void(0)">Cloud Computing Solutions</a>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <h3 class="foter-sub-heading mb-4">Industry Focus</h3>
+                  <div class="footer-links">
+                    <a href="javascript:void(0)">High Tech Startups</a>
+                    <a href="javascript:void(0)"
+                      >Media, PR, and Creative Agencies</a
+                    >
+                    <a href="javascript:void(0)">
+                      Entrepreneurs and Investors
+                    </a>
+                    <a href="javascript:void(0)"
+                      >Companies in a Growth Phase
+                    </a>
+                    <a href="javascript:void(0)">Remote Teams</a>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <h3 class="foter-sub-heading mb-4">Contact Info</h3>
+                  <div class="footer-links">
+                    <a href="javascript:void(0)">Phone: 800-344-9018</a>
+                    <a href="mailto:info@limetech.co"
+                      >Email: info@limetech.co
+                    </a>
+                    <a href="javascript:void(0)">
+                      We’re a remote company serving businesses worldwide.
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Footer Copyright -->
+        <div class="footer-copyright text-white text-start py-4 border-top">
+          <div class="row g-3">
+            <div
+              class="col-md-6 col-lg-7 text-center text-md-start align-self-center para-text"
+            >
+              <p class="mb-0">Copyright & Design by @Faysal</p>
+            </div>
+            <div
+              class="col-md-6 col-lg-5 text-center text-md-end align-self-center"
+            >
+              <a href="javascript:void(0)" class="me-5 para-text"
+                >Terms of use
+              </a>
+              <a href="javascript:void(0)" class="para-text">Privacy Policy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- ============================= End Footer Section Here ============================= -->
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Main JS -->
+    <script src="js/index.js"></script>
+  </body>
+</html>

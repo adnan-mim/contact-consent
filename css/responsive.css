@@ -1,0 +1,105 @@
+@media only screen and (max-width: 991px) {
+  /* ======= Header Section ======= */
+  #header-section .navbar .navbar-toggler {
+    background: transparent linear-gradient(108deg, #00aff0 0%, #0070f0 100%) 0% 0% no-repeat padding-box;
+    padding: 3px 7px !important;
+    border-radius: 5px;
+  }
+  #header-section .navbar .navbar-toggler:focus {
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+  }
+  #header-section .navbar .navbar-toggler span {
+    width: 30px;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 6px 0;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    border-radius: 24px;
+  }
+  #header-section .navbar .navbar-toggler.toggle .bar-1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 5px);
+            transform: rotate(-45deg) translate(-6px, 5px);
+  }
+  #header-section .navbar .navbar-toggler.toggle .bar-2 {
+    opacity: 0;
+  }
+  #header-section .navbar .navbar-toggler.toggle .bar-3 {
+    -webkit-transform: rotate(45deg) translate(-7px, -7px);
+            transform: rotate(45deg) translate(-7px, -7px);
+  }
+  #header-section .navbar .navbar-collapse {
+    background-color: #ffffff;
+    -webkit-box-shadow: 8px 13px 23px #0000001a;
+            box-shadow: 8px 13px 23px #0000001a;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+    border-radius: 8px;
+  }
+  #header-section .navbar .navbar-collapse .nav-item {
+    margin: 10px 0;
+  }
+  #header-section .navbar .navbar-collapse .nav-item:first-child {
+    margin-top: 20px;
+  }
+  #header-section .navbar .navbar-collapse .nav-item:last-child {
+    margin-bottom: 30px;
+  }
+  #header-section .navbar .navbar-collapse .nav-item .nav-link {
+    padding: 0;
+  }
+  #header-section .navbar.sticky-nav .navbar-collapse {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  /* ======= Info Section ======= */
+  #info-section .bg {
+    background-position: right;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  /* ======= Reuseable ======= */
+  .container {
+    padding: 0 30px !important;
+  }
+  .heading {
+    font-size: 30px;
+  }
+  .big-heading {
+    font-size: 35px;
+  }
+  .big-para-text {
+    font-size: 17px;
+  }
+  .card-heading {
+    font-family: 20px;
+  }
+  /* ======= Header Section ======= */
+  #header-section {
+    padding-top: 30px;
+    padding-bottom: 0;
+  }
+  /* ======= Pricing Section ======= */
+  #pricing-section {
+    padding: 50px 0;
+  }
+  /* ======= Solution Section ======= */
+  #solution-section {
+    padding: 50px 0;
+  }
+  /* ======= Compliance Section ======= */
+  #compliance-section {
+    padding-top: 50px;
+  }
+  /* ======= Info Section ======= */
+  #info-section .bg .info-heading {
+    font-size: 45px;
+  }
+  /* ======= Footer Section ======= */
+  footer .footer-widget .footer-logo {
+    width: 200px !important;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */

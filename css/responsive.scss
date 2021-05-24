@@ -1,0 +1,117 @@
+@media only screen and (max-width: 991px) {
+  /* ======= Header Section ======= */
+  #header-section {
+    .navbar {
+      .navbar-toggler {
+        background: transparent
+          linear-gradient(108deg, #00aff0 0%, #0070f0 100%) 0% 0% no-repeat
+          padding-box;
+        padding: 3px 7px !important;
+        border-radius: 5px;
+        &:focus {
+          box-shadow: none !important;
+        }
+        span {
+          width: 30px;
+          height: 3px;
+          background-color: #ffffff;
+          margin: 6px 0;
+          transition: 0.4s;
+          border-radius: 24px;
+        }
+        &.toggle {
+          .bar-1 {
+            transform: rotate(-45deg) translate(-6px, 5px);
+          }
+          .bar-2 {
+            opacity: 0;
+          }
+          .bar-3 {
+            transform: rotate(45deg) translate(-7px, -7px);
+          }
+        }
+      }
+      .navbar-collapse {
+        background-color: #ffffff;
+        box-shadow: 8px 13px 23px #0000001a;
+        transform: translateY(20px);
+        border-radius: 8px;
+        .nav-item {
+          margin: 10px 0;
+          &:first-child {
+            margin-top: 20px;
+          }
+          &:last-child {
+            margin-bottom: 30px;
+          }
+          .nav-link {
+            padding: 0;
+          }
+        }
+      }
+      &.sticky-nav {
+        .navbar-collapse {
+          box-shadow: none;
+        }
+      }
+    }
+  }
+  /* ======= Info Section ======= */
+  #info-section {
+    .bg {
+      background-position: right;
+    }
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  /* ======= Reuseable ======= */
+  .container {
+    padding: 0 30px !important;
+  }
+  .heading {
+    font-size: 30px;
+  }
+  .big-heading {
+    font-size: 35px;
+  }
+  .big-para-text {
+    font-size: 17px;
+  }
+  .card-heading {
+    font-family: 20px;
+  }
+  /* ======= Header Section ======= */
+  #header-section {
+    padding-top: 30px;
+    padding-bottom: 0;
+  }
+  /* ======= Pricing Section ======= */
+  #pricing-section {
+    padding: 50px 0;
+  }
+  /* ======= Solution Section ======= */
+  #solution-section {
+    padding: 50px 0;
+  }
+  /* ======= Compliance Section ======= */
+  #compliance-section {
+    padding-top: 50px;
+  }
+  /* ======= Info Section ======= */
+  #info-section {
+    .bg {
+      .info-heading {
+        font-size: 45px;
+      }
+    }
+  }
+  /* ======= Footer Section ======= */
+  footer {
+    .footer-widget {
+      .footer-logo {
+        width: 200px !important;
+      }
+    }
+  }
+}
